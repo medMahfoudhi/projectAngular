@@ -4,13 +4,9 @@ const productSchema = mongoose.Schema({
   productName: String,
   category: {
     type: String,
-    enum: [
-      "Jewlery and Watches",
-      "Home And Garden",
-      "Computer Electronic",
-      "Beauty Product",
-    ],
+    enum: ["watches", "home and furniture", "electronic"],
   },
+  sousCategory: String,
   price: Number,
   imageUrl: String,
   stock: Number,
