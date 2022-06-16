@@ -1,0 +1,18 @@
+<div *ngFor="let item of allMobile" class="card">
+  <div class="imgBox">
+    <img
+      (click)="getItemDetail(item)"
+      routerLink="/admin/updateProdact/{{ item._id }}"
+      [src]="item.imageUrl"
+      alt="mouse corsair"
+      class="mouse"
+    />
+  </div>
+
+  <div class="contentBox">
+    <h3>{{ item.productName }}</h3>
+    <h2 class="price">{{ item.price }}</h2>
+    <button  class="buy">edit</button>
+    <button class="buy">delete</button>
+  </div>
+</div>

@@ -51,8 +51,10 @@ export const findProduct = function (req, res) {
 };
 export const getOneProdById = function (req, res) {
   Product.findById(req.params._id)
-     .then((data) => res.json({ message: "Prod existing", data }))
-     .catch((err) =>
-       res.status(404).json({ message: "prod not found", error: err.message })
-     );
- }
+    .then((data) => res.json({ message: "Prod existing", data }))
+    .catch((err) =>
+      res.status(404).json({ message: "prod not found", error: err.message })
+    );
+};
+//////get all mobile souscategory
+

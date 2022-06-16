@@ -20,6 +20,10 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LayoutsModule } from './layouts/layouts.module';
+import { MobileComponent } from './modules/components/mobile/mobile.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { UpdateProductComponent } from './modules/components/update-product/update-product.component';
 
 // import { AuthInterceptor } from '../auth.interceptor'
 @NgModule({
@@ -40,6 +44,8 @@ import { LayoutsModule } from './layouts/layouts.module';
     HomeComponent,
     ShoppingCartComponent,
     ProductDetailsComponent,
+    MobileComponent,
+    UpdateProductComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,6 +53,8 @@ import { LayoutsModule } from './layouts/layouts.module';
     NgbModule,
     HttpClientModule,
     LayoutsModule,
+    CommonModule,
+    FormsModule
   ],
   providers: [
     // { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },

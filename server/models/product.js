@@ -9,7 +9,7 @@ const productSchema = mongoose.Schema({
   sousCategory: String,
   price: Number,
   imageUrl: String,
-  stock: Number,
+  stock: { type: Number, default: 1 },
   description: String,
   date_added: { type: Date, default: Date.now },
 });
