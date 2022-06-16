@@ -20,10 +20,10 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LayoutsModule } from './layouts/layouts.module';
-import { MobileComponent } from './modules/components/mobile/mobile.component';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import {MobileComponent} from '../app/modules/components/mobile/mobile.component'
 import { UpdateProductComponent } from './modules/components/update-product/update-product.component';
+import { FormsModule } from '@angular/forms';
 
 // import { AuthInterceptor } from '../auth.interceptor'
 @NgModule({
@@ -53,6 +53,8 @@ import { UpdateProductComponent } from './modules/components/update-product/upda
     NgbModule,
     HttpClientModule,
     LayoutsModule,
+    CommonModule,
+   
     CommonModule,
     FormsModule
   ],

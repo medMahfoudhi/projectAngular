@@ -6,6 +6,7 @@ import { AllProductsComponent } from './all-products/all-products.component';
 import { AllWatchesProdComponent } from './all-watches-prod/all-watches-prod.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { LoginComponent } from './login/login.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
@@ -22,12 +23,7 @@ const routes: Routes = [
    {path:"signup",component:SignupComponent},
    {path:"shoppingCart",component:ShoppingCartComponent},
    {path:"product/:id",component:ProductDetailsComponent},
-   {
-    path: 'admin',
-    canActivate: [],
-    loadChildren: () =>
-      import('./modules/admin/admin.module').then((m) => m.AdminModule),
-  }
+   // {path:"admin",component:AdminLayoutComponent}
 
 ];
 

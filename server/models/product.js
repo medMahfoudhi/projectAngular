@@ -9,7 +9,11 @@ const productSchema = mongoose.Schema({
   sousCategory: String,
   price: Number,
   imageUrl: String,
+<<<<<<< HEAD
   stock: { type: Number, default: 1 },
+=======
+  stock: Number,
+>>>>>>> 0583909ce76ea79e3940218c05e3db04cea54090
   description: String,
   date_added: { type: Date, default: Date.now },
 });
