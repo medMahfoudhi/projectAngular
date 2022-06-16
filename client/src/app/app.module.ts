@@ -18,7 +18,11 @@ import { AllFurnitureProdComponent } from './all-furniture-prod/all-furniture-pr
 import { HomeComponent } from './home/home.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LayoutsModule } from './layouts/layouts.module';
+import { CommonModule } from '@angular/common';
 
+// import { AuthInterceptor } from '../auth.interceptor'
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,15 +41,18 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     HomeComponent,
     ShoppingCartComponent,
     ProductDetailsComponent,
-    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
-    
+    NgbModule,
+    HttpClientModule,
+    LayoutsModule,
+    CommonModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    // { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

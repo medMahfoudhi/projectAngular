@@ -1,5 +1,5 @@
 .navbar-light{
-    background: #00e6e6 ;
+    background: #268cfa ;
     
     /* background: linear-gradient(to right, #ffffcc 0%, #66ffff 100%);     */
 }
@@ -129,6 +129,6 @@ a.category:hover{
     cursor: pointer;
 }
 .img-fluid{
-    width: 140px;
-    height: 140px;
+    width: 300px;
+    height: 300px;
 }
