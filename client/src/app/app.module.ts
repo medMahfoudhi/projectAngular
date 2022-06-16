@@ -21,9 +21,16 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { HttpClientModule } from '@angular/common/http';
 import { LayoutsModule } from './layouts/layouts.module';
 import { CommonModule } from '@angular/common';
-import {MobileComponent} from '../app/modules/components/mobile/mobile.component'
+// import {MobileComponent} from '../app/modules/components/mobile/mobile.component'
 import { UpdateProductComponent } from './modules/components/update-product/update-product.component';
 import { FormsModule } from '@angular/forms';
+import { HomeDecorComponent } from './home-decor/home-decor.component';
+import { FurnitureComponent } from './furniture/furniture.component';
+import { ComputerComponent } from './computer/computer.component';
+import { MWatchesComponent } from './m-watches/m-watches.component';
+import { WWatchesComponent } from './w-watches/w-watches.component';
+import { PhonesComponent } from './phones/phones.component';
+import { MobileComponent } from './modules/components/mobile/mobile.component';
 
 // import { AuthInterceptor } from '../auth.interceptor'
 @NgModule({
@@ -44,8 +51,14 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     ShoppingCartComponent,
     ProductDetailsComponent,
-    MobileComponent,
     UpdateProductComponent,
+    HomeDecorComponent,
+    FurnitureComponent,
+    ComputerComponent,
+    MWatchesComponent,
+    WWatchesComponent,
+    PhonesComponent,
+    MobileComponent
   ],
   imports: [
     BrowserModule,
