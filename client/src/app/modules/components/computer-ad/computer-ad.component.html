@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col">
       <div class="row">
-        <div *ngFor="let item of allMobile" class="card">
+        <div *ngFor="let item of allComputer" class="card">
           <div class="imgBox">
             <img [src]="item.imageUrl" alt="mouse corsair" class="mouse" />
           </div>
@@ -11,9 +11,8 @@
             <h3>{{ item.productName }}</h3>
             <h2 class="price">{{ item.price }}</h2>
             <button
-              (click)="getItemDetail(item)"
-              routerLink="/admin/updateProduct/{{ item._id }}"
               class="buy"
+              routerLink="/admin/updateProduct/{{ item._id }}"
             >
               edit
             </button>

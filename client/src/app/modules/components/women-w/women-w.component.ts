@@ -1,22 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 @Component({
-  selector: 'app-mobile',
-  templateUrl: './mobile.component.html',
-  styleUrls: ['./mobile.component.css'],
+  selector: 'app-women-w',
+  templateUrl: './women-w.component.html',
+  styleUrls: ['./women-w.component.css'],
 })
-export class MobileComponent implements OnInit {
-  allMobile: any;
-  itemDetail: any = {};
- 
+export class WomenWComponent implements OnInit {
+  allComputer: any;
   constructor(private http: HttpClient) {}
-  
 
   ngOnInit(): void {
     this.http.get('http://localhost:5000/product').subscribe(
       (res: any) =>
-        (this.allMobile = res.filter((e: any) => {
-          return e.sousCategory == 'mobile';
+        (this.allComputer = res.filter((e: any) => {
+          return e.sousCategory == 'Women Watches';
         }))
     );
   }
@@ -27,9 +24,5 @@ export class MobileComponent implements OnInit {
       },
     });
     this.ngOnInit();
-  }
-  getItemDetail(p: any) {
-    this.itemDetail = p;
-    // console.log(this.itemDetail)
   }
 }

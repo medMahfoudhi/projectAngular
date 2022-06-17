@@ -12,9 +12,6 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { QualityDescriptionComponent } from './quality-description/quality-description.component';
 import { ProductsExpComponent } from './products-exp/products-exp.component';
 import { AllProductsComponent } from './all-products/all-products.component';
-import { AllElectProductsComponent } from './all-elect-products/all-elect-products.component';
-import { AllWatchesProdComponent } from './all-watches-prod/all-watches-prod.component';
-import { AllFurnitureProdComponent } from './all-furniture-prod/all-furniture-prod.component';
 import { HomeComponent } from './home/home.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
@@ -45,9 +42,7 @@ import { MobileComponent } from './modules/components/mobile/mobile.component';
     QualityDescriptionComponent,
     ProductsExpComponent,
     AllProductsComponent,
-    AllElectProductsComponent,
-    AllWatchesProdComponent,
-    AllFurnitureProdComponent,
+
     HomeComponent,
     ShoppingCartComponent,
     ProductDetailsComponent,
@@ -58,7 +53,7 @@ import { MobileComponent } from './modules/components/mobile/mobile.component';
     MWatchesComponent,
     WWatchesComponent,
     PhonesComponent,
-    MobileComponent
+    MobileComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,9 +62,9 @@ import { MobileComponent } from './modules/components/mobile/mobile.component';
     HttpClientModule,
     LayoutsModule,
     CommonModule,
-   
+
     CommonModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [
     // { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },

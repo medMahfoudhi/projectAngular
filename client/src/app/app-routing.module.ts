@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AllElectProductsComponent } from './all-elect-products/all-elect-products.component';
-import { AllFurnitureProdComponent } from './all-furniture-prod/all-furniture-prod.component';
 import { AllProductsComponent } from './all-products/all-products.component';
-import { AllWatchesProdComponent } from './all-watches-prod/all-watches-prod.component';
 import { AppComponent } from './app.component';
 import { ComputerComponent } from './computer/computer.component';
 import { FurnitureComponent } from './furniture/furniture.component';

@@ -14,7 +14,7 @@ export class WWatchesComponent implements OnInit {
     this.http.get('http://localhost:5000/product').subscribe(
       (res: any) =>
         (this.allComputer = res.filter((e: any) => {
-          return e.sousCategory == 'womenWatches';
+          return e.sousCategory == 'Women Watches';
         }))
     );
   }

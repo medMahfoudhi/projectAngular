@@ -14,7 +14,7 @@ export class MWatchesComponent implements OnInit {
     this.http.get('http://localhost:5000/product').subscribe(
       (res: any) =>
         (this.allComputer = res.filter((e: any) => {
-          return e.sousCategory == 'menWatches';
+          return e.sousCategory == 'Men Watches';
         }))
     );
   }
